@@ -1,0 +1,45 @@
+CREATE DATABASE dogs_db;
+
+USE dogs_db;
+
+CREATE TABLE dogs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nev VARCHAR(50) NOT NULL,
+    nem VARCHAR(10) NOT NULL,
+    chip_szam VARCHAR(50) NOT NULL,
+    fajta VARCHAR(50) NOT NULL,
+    egeszseg TEXT,
+    fogak TEXT,
+    kor INT NOT NULL,
+    info TEXT,
+    ivartalanitott BOOLEAN NOT NULL
+);
+
+CREATE TABLE users (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
+
+
+INSERT INTO dogs (nev, nem, chip_szam, fajta, egeszseg, fogak, kor, info, ivartalanitott) VALUES
+('Buddy', 'Hím', 'CHIP001', 'Kutya', 'Egészséges', 'Teljes', 3, 'Barátságos és játékos', TRUE),
+('Bella', 'Nőstény', 'CHIP002', 'Kutya', 'Egészséges', 'Teljes', 4, 'Imádja a cirógatást', TRUE),
+('Charlie', 'Hím', 'CHIP003', 'Kutya', 'Egészséges', 'Teljes', 2, 'Nagyon aktív', FALSE),
+('Lucy', 'Nőstény', 'CHIP004', 'Kutya', 'Egészséges', 'Néhány hiányzik', 5, 'Nyugodt és csendes', TRUE),
+('Max', 'Hím', 'CHIP005', 'Kutya', 'Egészséges', 'Teljes', 6, 'Jó gyerekekkel', FALSE),
+('Daisy', 'Nőstény', 'CHIP006', 'Kutya', 'Egészséges', 'Teljes', 1, 'Imád futni', TRUE),
+('Rocky', 'Hím', 'CHIP007', 'Kutya', 'Egészséges', 'Teljes', 7, 'Védelmező', FALSE),
+('Luna', 'Nőstény', 'CHIP008', 'Kutya', 'Egészséges', 'Teljes', 3, 'Nagyon okos', TRUE),
+('Bailey', 'Hím', 'CHIP009', 'Kutya', 'Egészséges', 'Teljes', 8, 'Imádja a finomságokat', TRUE),
+('Molly', 'Nőstény', 'CHIP010', 'Kutya', 'Egészséges', 'Teljes', 4, 'Nagyon kedves', FALSE),
+('Jack', 'Hím', 'CHIP011', 'Kutya', 'Egészséges', 'Teljes', 5, 'Jó a labdázásban', TRUE),
+('Coco', 'Nőstény', 'CHIP012', 'Kutya', 'Egészséges', 'Teljes', 2, 'Imád úszni', TRUE),
+('Riley', 'Hím', 'CHIP013', 'Kutya', 'Egészséges', 'Teljes', 6, 'Hűséges és engedelmes', FALSE),
+('Sophie', 'Nőstény', 'CHIP014', 'Kutya', 'Egészséges', 'Teljes', 7, 'Nyugodt és barátságos', TRUE),
+('Toby', 'Hím', 'CHIP015', 'Kutya', 'Egészséges', 'Teljes', 1, 'Nagyon játékos', TRUE),
+('Sadie', 'Nőstény', 'CHIP016', 'Kutya', 'Egészséges', 'Teljes', 3, 'Imádja a figyelmet', FALSE),
+('Buster', 'Hím', 'CHIP017', 'Kutya', 'Egészséges', 'Teljes', 4, 'Jó más kutyákkal', TRUE),
+('Maggie', 'Nőstény', 'CHIP018', 'Kutya', 'Egészséges', 'Teljes', 5, 'Imád felfedezni', FALSE),
+('Oscar', 'Hím', 'CHIP019', 'Kutya', 'Egészséges', 'Teljes', 2, 'Nagyon energikus', TRUE),
+('Chloe', 'Nőstény', 'CHIP020', 'Kutya', 'Egészséges', 'Teljes', 6, 'Imádja a hasi dörzsölést', TRUE);

@@ -1,0 +1,334 @@
+/* Alap stílusok */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    color: #343a40;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Fejléc stílusok */
+header {
+    background-color: #CA6641;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+img{
+    height: 400px;
+    width: 33%;
+    border-radius: 5px;
+    float: center;
+}
+header h1 {
+    margin: 0;
+}
+.welcome{
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+/* Navigációs sáv stílusok */
+nav {
+    background-color: #343a40;
+    padding: 10px 40px; /* Növelt oldalsó padding */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 3px solid #00bfff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    background-color: #495057;
+    border-radius: 5px;
+}
+
+/* Gombszerű stílus a belépés/regisztráció menüponthoz */
+.login-button {
+    background-color: #007BFF;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-left: auto;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+/* Extra kiemelés, ha szükséges */
+.login-button:focus {
+    outline: 2px solid #0056b3;
+}
+
+/* Tartalom stílusok */
+#content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+#upload-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#upload-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#upload-form input[type="text"],
+#upload-form input[type="number"],
+#upload-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#upload-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+#upload-form input[type="checkbox"] {
+    margin-bottom: 15px;
+}
+
+#upload-form input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#upload-form input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.message {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.error {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+/* Lábjegyzet */
+footer {
+    background-color: #CA6641; /* Sötétkék lábléc */
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+    border-top: 3px solid #00bfff;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    color: #00bfff; /* Világoskék alcímek */
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+    color: #00bfff; /* Világoskék hover */
+    text-decoration: underline;
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+/* Tartalom stílusok */
+#content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+#dog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.dog-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.dog-card img.dog-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.dog-card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.dog-card p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Táblázat stílusok */
+#dog-table {
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #dcdcdc;
+    cursor: pointer;
+}
+
+/* Műveletek gombok stílusok */
+#dog-table a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+#dog-table a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Keresőbár stílusok */
+#search {
+    margin: 1em 0;
+    text-align: center;
+}
+
+#search-form {
+    display: inline-block;
+}
+
+#search-input {
+    padding: 0.5em;
+    width: 200px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 1em;
+}
+
+#search-form button {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#search-form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#search-form button[type="button"] {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+#search-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#search-form button[type="button"]:hover {
+    background-color: #c82333;
+}
